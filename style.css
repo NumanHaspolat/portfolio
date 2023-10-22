@@ -61,7 +61,6 @@ li {
   transition: width 0.3s;
 }
 .cool-link:hover {
-  transform: translateY(-5px);
   cursor: pointer;
   background: linear-gradient(
     90deg,
@@ -207,6 +206,8 @@ input[type="submit"] {
     color: #697887;
     opacity: 0;
     transform: translateY(100px);
+    font-family: monospace;
+    font-size: 1rem;
   }
 }
 
@@ -359,11 +360,31 @@ footer {
   .hori {
     width: 35%;
   }
+
+  .hero img {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 690px) {
   .cool-link {
     display: none;
+  }
+
+  .hero img {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  .hero {
+    flex-direction: column;
+    gap: 6rem !important;
+  }
+  .hero h1 {
+    font-size: 3.1rem;
+    line-height: 4rem;
+    width: 100% !important;
   }
 }
 
@@ -372,13 +393,17 @@ footer {
   display: flex;
   border: 2px solid white;
   padding: 1.2rem;
-  flex-direction: column !important;
-  align-items: center !important;
+  flex-direction: row;
+  align-items: center;
   border-radius: 0.3rem;
   text-align: center;
-  gap: 1rem !important;
+  gap: 1rem;
 }
-
+@media screen and (max-width: 390px) {
+  .mobile {
+    flex-direction: column !important;
+  }
+}
 .hidden {
   display: none;
 }
@@ -435,11 +460,13 @@ footer {
   align-items: center;
   margin: 10px 0;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .social-icon__item,
 .menu__item {
   list-style: none;
+  text-align: center;
 }
 
 .copy {
@@ -453,6 +480,7 @@ footer {
   margin: 0 10px;
   display: inline-block;
   transition: 0.5s;
+  text-align: center;
 }
 .social-icon__link:hover {
   cursor: pointer;
@@ -541,10 +569,10 @@ footer {
   width: 50%;
   text-align: center;
   margin: auto;
-  font-family: "Poppins" !important;
+  font-family: monospace !important;
   font-weight: 600;
-  line-height: 1.5rem;
-  font-size: 1.2em;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
 }
 
 .who {
@@ -586,7 +614,11 @@ footer {
   border-radius: 0.9rem;
 }
 
-.hero h1{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.hero h1 {
+  font-family: "Poppins";
+  width: 50%;
 }
 
+.home {
+  color: white;
+}
