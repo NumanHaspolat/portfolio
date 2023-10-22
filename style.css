@@ -394,12 +394,13 @@ footer {
   border: 2px solid white;
   padding: 1.2rem;
   flex-direction: row;
-  align-items: center;
+  align-items: center !important;
+  justify-content: center;
   border-radius: 0.3rem;
   text-align: center;
   gap: 1rem;
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 456px) {
   .mobile {
     flex-direction: column !important;
   }

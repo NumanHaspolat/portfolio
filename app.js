@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         y: mobileNav.style.display === "none" ? 0 : -50,
         opacity: mobileNav.style.display === "none" ? 1 : 0,
         duration: 0.5,
-        display: mobileNav.style.display === "none" ? "block" : "none",
+        display: mobileNav.style.display === "none" ? "flex" : "none",
       });
     }
   
